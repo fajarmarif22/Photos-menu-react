@@ -57,6 +57,7 @@ function App() {
     if (!newImages) return
     if (loading) return
     setPage((oldPage) => oldPage + 1)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [newImages])
 
   const event = () => {
